@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-gradient {
+        background: rgb(56, 62, 68);
+        background: linear-gradient(100deg, rgba(56, 62, 68, 1) 0%, rgba(232, 233, 235, 1) 52%, rgba(86, 73, 103, 1) 100%);
+    }
+
+    .bg-gradient-custom {
+        /* background: rgb(56, 62, 68);
+        background: linear-gradient(27deg, rgba(56, 62, 68, 1) 0%, rgba(232, 233, 235, 1) 1%, rgba(86, 73, 103, 1) 100%); */
+
+        background: rgb(56, 62, 68);
+        background: linear-gradient(27deg, rgba(56, 62, 68, 1) 0%, rgba(232, 233, 235, 1) 52%, rgba(86, 73, 103, 1) 100%);
+
+        /* wavy orange*/
+        /* background-color: #d6fffb;
+        opacity: 1;
+        background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #d6fffb 28px), repeating-linear-gradient(#ffffff55, #ffcdbb); */
+
+        /* wavy white*/
+        /* background-color: #E8E9EB;
+        opacity: 1;
+        background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #E8E9EB 28px), repeating-linear-gradient(#ffffff55, #ffffff); */
+
+        /* wavy orange */
+        /* background-color: #d6fffb;
+        opacity: 1;
+        background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #d6fffb 40px), repeating-linear-gradient(#ffcdbb55, #ffcdbb); */
+
+        /* cubes */
+
+        /* background-color: #d6fffb;
+        opacity: 1;
+        background-image: linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77), linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77);
+        background-size: 56px 98px;
+        background-position: 0 0, 0 0, 28px 49px, 28px 49px, 0 0, 28px 49px; */
+    }
+}

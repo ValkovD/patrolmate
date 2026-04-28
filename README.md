@@ -25,5 +25,5 @@ Beyond development, the project demonstrates strong understanding of deployment,
 This project showcases not only the ability to build modern web applications, but also the capability to independently deploy, maintain, troubleshoot, and manage production infrastructure end-to-end.
 
 ## Project is live at: 
-
-# patrolmate.pdeit.com
+ps: Looks better on the phone
+### https://patrolmate.pdeit.com

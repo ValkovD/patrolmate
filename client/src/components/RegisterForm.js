@@ -28,11 +28,11 @@ export const RegisterForm = ({ registerUser, setCurrentView, loading }) => {
         }
 
         if (!registerData.email.includes("@")) {
-            newErrors.email = "Invalid email";
+            newErrors.email = "Invalid e-mail";
         }
 
         if (registerData.password.length < 8) {
-            newErrors.password = "8+ chars, A–Z, a–z, 0–9, special (!@#$)";
+            newErrors.password = "Use more than 8 characters with uppercase, lowercase, a number, and a symbol (!@#$).";
         }
 
         return newErrors;
@@ -75,7 +75,7 @@ export const RegisterForm = ({ registerUser, setCurrentView, loading }) => {
 
                 <div className='mb-4'>
                     { }
-                    {errors.name && <p className="text-primaryDark text-sm text-red-700">{errors.name}</p>}
+                    {errors.name && <p className="w-64 text-balance text-center text-primaryDark font-bold text-sm text-red-700">{errors.name}</p>}
                     <input
                         onChange={onChange}
                         className={`h-18 shadow-custom w-64 bg-primary border-2 rounded-md border-solid ${errors.name ? "border-red-700" : "border-stone-500"} p-2`}
@@ -86,7 +86,7 @@ export const RegisterForm = ({ registerUser, setCurrentView, loading }) => {
                     />
                 </div>
                 <div className='mb-4'>
-                    {errors.surname && <p className="text-primaryDark text-sm text-red-700">{errors.surname}</p>}
+                    {errors.surname && <p className="w-64 text-balance text-center text-primaryDark font-bold text-sm text-red-700">{errors.surname}</p>}
                     <input
                         onChange={onChange}
                         className={`h-18 shadow-custom w-64 bg-primary border-2 rounded-md border-solid ${errors.surname ? "border-red-700" : "border-stone-500"} p-2`}
@@ -98,7 +98,7 @@ export const RegisterForm = ({ registerUser, setCurrentView, loading }) => {
                 </div>
 
                 <div className='mb-4'>
-                    {errors.email && <p className="text-primaryDark text-sm text-red-700">{errors.email}</p>}
+                    {errors.email && <p className="w-64 text-balance text-center text-primaryDark font-bold text-sm text-red-700">{errors.email}</p>}
                     <input
                         onChange={onChange}
                         className={`h-18 shadow-custom w-64 bg-primary border-2 rounded-md border-solid ${errors.email ? "border-red-700" : "border-stone-500"} p-2`}
@@ -110,7 +110,10 @@ export const RegisterForm = ({ registerUser, setCurrentView, loading }) => {
                 </div>
 
                 <div className='mb-8'>
-                    {errors.password && <p className="text-primaryDark text-sm text-red-700">{errors.password}</p>}
+                    {/* <div className='h-[80px] text-center break-words'> */}
+                    {errors.password && <p className="w-64 text-balance text-center text-primaryDark font-bold text-sm text-red-700">{errors.password}</p>}
+                    {/* </div> */}
+
                     <input
                         onChange={onChange}
                         className={`h-18 shadow-custom w-64 bg-primary border-2 rounded-md border-solid ${errors.password ? "border-red-700" : "border-stone-500"} p-2`}

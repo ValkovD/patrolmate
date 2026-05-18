@@ -1,29 +1,57 @@
-# Full-Stack Web Application & VPS Deployment
+# PatrolMate
 
-Full-stack web application and portfolio platform deployed on a production VPS environment using modern DevOps practices.
+Production-style full-stack task management platform built with React, Node.js, MongoDB and Docker.
 
-The project was built solely by myself using a modern JavaScript stack with a clear separation between client and server architecture. The frontend (mainly designed for phone screens) was developed with **React** for a responsive and dynamic user experience, while the backend API was created using **Bun.js** for speed to handle business logic, authentication, login , registering users, keeping them logged in by JWT for better user experience and database operations with cloud **MongoDB**. The app itself is designed for roadside patrols in the brakedown industry in UK. Helps the patrol to track the number of brakedowns during the day and add notes on every job completed. This project is still in development with future functionality to keep track of parts in the service vehicle and to have live chat with other patrols on the road.
+## Live Demo
+https://patrolmate.pdeit.com
 
-Beyond development, the project demonstrates strong understanding of deployment, server management, and containerization. The applications are deployed on a **Contabo VPS** using **Docker** and **Portainer** for container orchestration and management. Reverse proxy configuration and domain routing were handled through **Nginx Proxy Manager**, enabling secure and scalable hosting of multiple applications on the same server.
+## Features
 
-## Technical Skills Demonstrated
+- JWT Authentication
+- REST API Architecture
+- Dockerized Deployment
+- VPS Hosting (Ubuntu + Nginx)
+- Responsive Dashboard UI
+- MongoDB Data Modeling
+- Protected Routes
+- Modular Frontend Components
 
-- Full-stack web development
-- React frontend architecture
-- Bun.js backend development
-- REST API architecture
-- MongoDB database integration
+## Tech Stack
+
+Frontend:
+- React
+- Tailwind CSS
+
+Backend:
+- Node.js
+- Express.js
+- MongoDB
+
+DevOps:
+- Docker
+- Nginx
+- Ubuntu VPS
+
+## Architecture
+
+The application follows a client-server architecture:
+
+- React frontend
+- Express REST API backend
+- MongoDB database
 - Docker containerization
-- VPS server administration
-- Linux command line operations
-- Reverse proxy and networking configuration
-- Environment management and production deployment
-- Git and version control workflows
+- VPS deployment with Nginx reverse proxy
 
-## Project Outcome
+## Local Setup
 
-This project showcases not only the ability to build modern web applications, but also the capability to independently deploy, maintain, troubleshoot, and manage production infrastructure end-to-end.
+npm install
+docker compose up
 
-## Project is live at: 
-ps: Looks better on the phone
-### https://patrolmate.pdeit.com
+<img width="720" height="1600" alt="Screenshot_20260518_155159_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/e473fd15-dcb7-41a5-8c43-2e9b7f7a1315" />
+<img width="720" height="1600" alt="Screenshot_20260518_155132_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/052d0427-495c-439a-8772-08e6a1491ead" />
+<img width="720" height="1600" alt="Screenshot_20260518_155036_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/c6a203ea-7d79-4782-9eca-20202c86de14" />
+<img width="720" height="1600" alt="Screenshot_20260518_155008_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/3e986d9f-b809-4377-a75c-ebaae5952936" />
+<img width="720" height="1600" alt="Screenshot_20260518_154930_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/fc70396d-85f2-4c26-9af0-926e6a7150dd" />
+<img width="720" height="1600" alt="Screenshot_20260518_154310_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/69d7fdf5-fdf6-4dd8-946b-46012b90a7d5" />
+<img width="720" height="1600" alt="Screenshot_20260518_154305_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/a2ce176a-e9f9-4215-832e-c73dbc8301ee" />
+<img width="720" height="1600" alt="Screenshot_20260518_154256_com_android_chrome_ChromeTabbedActivity" src="https://github.com/user-attachments/assets/984d1f16-341f-4ec9-b548-be957f506ccb" />
